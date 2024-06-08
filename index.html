@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Server</title>
+</head>
+<style>
+    h1 {
+        /* background-image: url(C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2023-03-14 114715.png); */
+        margin-left: 17px;
+        margin-bottom: 4;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        /* background: url("CodingImage.jpg"); */
+        height: 1000px;
+    }
+
+
+    h3 {
+        color: red;
+        border-radius: 8px;
+        border-width: 3px;
+        background-image: ;
+        border-color: cyan;
+        border-style: solid;
+        /* border: 3px solid cyan; */
+        font-style: oblique;
+        font-family: cursive;
+        width: 165px;
+    }
+
+    /* p{
+            /* border-color: blue;
+            border-width: 4px;
+            border-style: solid;
+        }*/
+    .btn {
+        color: red;
+        cursor: pointer;
+    }
+
+    .container {
+        margin: 11px;
+    }
+
+    .timee {
+        /* border: 2px solid black; */
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navbar{
+        /* background-color: aqua; */
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 5px;
+        left: 200px;
+        display: inline-block;
+
+    }
+    .navbar li{
+        float: left;
+        /* display: inline-block; */
+        font-size: 17px;
+        margin: 4px;
+        padding: 2px;
+        padding-left: 20px;
+        padding-right: 100px;
+    }
+    .navbar li a{
+        text-decoration: none;
+        /* padding: 14px 12px;
+        margin: 10px; */
+    }
+    ul{
+        display: flex;
+    }
+    li{
+        /* background-color: rebeccapurple; */
+        margin: 23px;
+        padding: 20px;
+        list-style: none;
+
+    }
+</style>
+
+<body class="container">
+    <h1>CODING</h1>
+    <!-- <h2>CODING 2</h2> -->
+    <header>
+
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href='/home'>Home</a></li>
+                <li class="item"><a href='/about'>About</a></li>
+                <li class="item"><a href='/services'>Services</a></li>
+                <li class="item"><a href='/contact'>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <p style="background-color:aliceblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas
+        sequi dolorem molestiae, voluptate minima? Vitae eius similique neque quos, incidunt nam dolore fugiat commodi
+        autem et impedit assumenda nobis quod, fugit iure labore, eaque dolorem? Quia deserunt expedita ad unde fugit.
+        <a href="http://127.0.0.1:5500/newWeb.html" target="_blank">Read more </a> <br><br>
+        <button class="btn"> Contact us</button>
+
+    <div class="timee">
+        <span id="time"></span>
+    </div>
+    <p id="abc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut soluta repellendus recusandae esse, numquam minus
+        fuga molestias totam in! Architecto molestiae debitis nam officia libero nisi laboriosam magni dignissimos
+        quidem ad, aperiam et veritatis quisquam. Quae earum suscipit ut corrupti culpa atque cumque dignissimos aliquam
+        id? Perspiciatis, saepe quam. Recusandae in esse doloremque quas dignissimos obcaecati facilis est quod? Maxime
+        nihil quasi culpa, iste reprehenderit magnam quibusdam ab nam ut, pariatur harum eligendi adipisci quae in
+        repellat! Nihil aliquam ratione facere maxime vel eveniet saepe aliquid voluptate beatae voluptatibus excepturi
+        totam, temporibus neque natus voluptatem praesentium blanditiis sunt. Quibusdam dicta sit distinctio voluptates
+        libero aspernatur nobis, delectus voluptate tempora corrupti, optio veniam eos expedita quasi dolorum temporibus
+        alias facere ipsam veritatis officiis, harum quidem? Sunt quae ad nobis corrupti rem. Eligendi quos perspiciatis
+        alias quo et! Eius repudiandae eum sequi autem asperiores recusandae.
+    </p>
+    <button id="btnn" onclick="hide()"> show/hide</button>
+    </p>
+
+    <!-- <a href="C:\Web Developement\MyWebPage\index.html">hello</a> -->
+
+
+    <h3>FORMS are here</h3> <br><br>
+    <form action="backend.php">
+        Name: <input type="text" placeholder="Enter your name"><br><br>
+        Reg No.: <input type="text"><br><br>
+        Email: <input type="text"><br><br>
+        Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender"> Others <input
+            type="radio" name="mygender"> <br><br><br>
+        <img src="C:\" CodingImage.jpg" alt=" .img"> <br><br>
+        <input type="submit">
+    </form>
+    <script>
+        console.log("This is tutorial 58");
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover', function run() {
+        //     console.log('Mouse Inside')
+        // });
+
+        // para.addEventListener('mouseout', function run() {
+        //     console.log('Mouse now went outside')
+        // });
+
+
+        function hide() {
+            let btnn = document.getElementById('btnn');
+            let abc = document.getElementById('abc');
+            if (abc.style.display != 'none') {
+                abc.style.display = 'none';
+            }
+            else {
+                abc.style.display = 'block';
+            }
+        }
+        function displayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>
